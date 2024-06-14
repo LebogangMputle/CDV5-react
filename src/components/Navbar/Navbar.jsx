@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import styles from "./Navbar.modules.css"
-import { getImageUrl } from "../../utils";
+// import styles from "./Navbar.modules.css"
+import getImageUrl from "../../utils";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const styles = import("./Navbar.modules.css")
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">

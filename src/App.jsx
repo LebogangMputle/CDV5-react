@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Navbar } from "./components/Navbar";
+//import { useState } from 'react'
+import { Navbar } from "./components/Navbar/Navbar";
 import { styles} from "/src/App.modules.css"
 
 

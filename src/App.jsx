@@ -1,18 +1,21 @@
-//import { useState } from 'react'
-import { Navbar } from "./components/Navbar/Navbar";
-// import { styles} from "/src/App.modules.css"
+// import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Education from './components/Education/Education';
+import Experience from './components/Expirience/Experience';
+import './App.css';
 
-
-function App() {
-  const styles = import("/src/App.modules.css")
-
+const App = () => {
   return (
-    <>
-    <div className={styles.App}>
-      <Navbar/>
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
+      <Education />
+      <Experience />
     </div>
-    </>
   );
-}
+};
 
-export default App
+export default App;

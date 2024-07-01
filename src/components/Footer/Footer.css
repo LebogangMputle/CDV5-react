@@ -1,0 +1,37 @@
+
+.footer {
+    background-color: #071329; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0.5rem 0;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .social-media-icons a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .social-media-icons a:hover {
+    color: #fff; /* Change to white on hover */
+  }
+  

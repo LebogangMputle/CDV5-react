@@ -7,7 +7,7 @@ const Footer = () => {
     return (
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+          <p>&copy; 2024 Lebogang Mputle. All Rights Reserved.</p>
           <div className="social-media-icons">
             <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />

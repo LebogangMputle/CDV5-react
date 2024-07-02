@@ -1,4 +1,5 @@
 // import React from 'react';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
@@ -9,17 +10,30 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.querySelector('.footer');
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <BrowserRouter>
-    <Navbar />
-    <Footer />
-    <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/experience" element={<Experience/>} />
-          {/* <Route path="/footer" element={<Footer />} /> */}
-    </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

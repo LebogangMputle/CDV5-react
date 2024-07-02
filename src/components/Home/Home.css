@@ -2,14 +2,15 @@
 
 body, html {
   margin: 0;
-  padding: 0;
+  padding: 0; /* Ensure no padding */
 }
 
 .home {
   background-color: #0b3d91; /* Dark blue background */
   color: #ffffff; /* White text */
-  padding: 2rem; /* Increased padding */
-  height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  padding-top: 80px; /* Adjust padding-top to match Navbar height */
+  height: calc(100vh - 80px); /* Adjust height to account for Navbar */
   display: flex;
   flex-direction: column;
   justify-content: center;

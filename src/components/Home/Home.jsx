@@ -9,7 +9,7 @@ const Home = () => {
         alt="Profile" 
         className="profile-image" 
       />
-      <h1>Home</h1>
+      <h1>HI!</h1>
       <p>Welcome to my portfolio website!</p>
       <button className="hire-me-button">Hire Me</button>
     </section>

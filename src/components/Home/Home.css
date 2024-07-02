@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .home {
   background-color: #0b3d91; /* Dark blue background */
   color: #ffffff; /* White text */
-  padding: 3rem; /* Increased padding */
+  padding: 2rem; /* Increased padding */
   height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
@@ -58,6 +63,7 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 2.5s ease-out forwards; /* Animations for button */
+  margin-bottom: 2rem; /* Add margin-bottom to create space between the button and the footer */
 }
 
 .home button:hover {

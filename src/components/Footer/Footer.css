@@ -27,12 +27,12 @@
   }
   
   .social-media-icons a {
-    color: #ffd700; /* Gold color for links */
+    color: white; /* Gold color for links */
     text-decoration: none;
     margin: 0 0.5rem;
   }
   
   .social-media-icons a:hover {
-    color: #fff; /* Change to white on hover */
+    color: #5b82cc; /* Change to white on hover */
   }
   

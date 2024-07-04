@@ -2,31 +2,33 @@
 
 body, html {
   margin: 0;
-  padding: 0; /* Ensure no padding */
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .home {
-  background-color: #0b3d91; /* Dark blue background */
+  background: url('https://wallpapercave.com/wp/wp14168878.png') no-repeat center;
   color: #ffffff; /* White text */
-  padding: 2rem;
-  padding-top: 80px; /* Adjust padding-top to match Navbar height */
-  height: calc(100vh - 80px); /* Adjust height to account for Navbar */
+  height: 100vh; /* Full viewport height */
   display: flex;
+  margin-top: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden; /* Prevents scrollbars from appearing during animation */
+  position: relative;
+  /* overflow: hidden; Prevents scrollbars from appearing during animation */
 }
 
 .home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for text readability */
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .home h1 {
+  padding-top: 50px;
   font-size: 4rem; /* Increased font size */
   margin-bottom: 1.5rem; /* Increased margin */
   opacity: 0;
@@ -42,18 +44,8 @@ body, html {
   animation: fadeInUp 1.5s ease-out forwards; /* Animations for p */
 }
 
-.home img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1.5rem; /* Increased border radius */
-  margin-top: 3rem; /* Increased margin */
-  opacity: 0;
-  transform: scale(0.9);
-  animation: fadeInScale 2s ease-out forwards; /* Animations for img */
-}
-
 .home button {
-  background-color: #ff4d97; /* Light purple/pink button */
+  background-color: #1e5220; /* Light purple/pink button */
   color: #ffffff; /* White text */
   border: none;
   padding: 1.5rem 3rem; /* Increased padding */
@@ -68,23 +60,12 @@ body, html {
 }
 
 .home button:hover {
-  background-color: #ff3370; /* Slightly darker pink on hover */
+  background-color: #55725f; /* Slightly darker pink on hover */
 }
 
 @media (min-width: 768px) {
   .home-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .home img {
-    margin-left: 2rem;
-    max-width: 50%;
-  }
-
-  .home-text {
-    max-width: 50%;
+    padding: 4rem;
   }
 }
 
@@ -93,12 +74,5 @@ body, html {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes fadeInScale {
-  to {
-    opacity: 1;
-    transform: scale(1);
   }
 }
